@@ -52,6 +52,8 @@ Below is the comparison of my latest commit showing the changes I made to the sc
   <p align="center">
      <img src="https://github.com/username123create/logistic_growth/blob/16a2f26b7ee8559340dda31d5f6dff86964ad744/images/CommitComparison.pdf">
   </p>
+  
+![Comparing Commits](images/CommitComparison.pdf)
 
 a)  Import the data for double-stranded DNA (dsDNA) viruses taken
     fromthe Supplementary Materials of the original paper into Posit
