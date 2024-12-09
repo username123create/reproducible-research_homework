@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Reproducible research: version control and R
 
 **Question 4**
@@ -56,7 +50,7 @@ d)  Go to your commit history and click on the latest commit. Show the
 Below is the comparison of my latest commit showing the changes I made to the script to make a reproducible sumulation of Brownian motion. The red boxes indicate where in the code these changes were made. I also added descriptions to the code so each step is clear to understand which represent the other changes between the two commits. 
 
   <p align="center">
-     <img src="https://github.com/username123create/logistic_growth/blob/16a2f26b7ee8559340dda31d5f6dff86964ad744/images/CommitComparison.pdf" width="600" height="500">
+     <img src="https://github.com/username123create/logistic_growth/blob/images/CommitComparison.pdf" width="600" height="500">
   </p>
 
 
