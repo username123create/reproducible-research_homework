@@ -4,7 +4,7 @@
 library(ggplot2)
 library(gridExtra)
 
-random_walk  <- function (n_steps, seed = 123) {
+random_walk  <- function (n_steps, seed = 1234) {
   
   set.seed(seed)
   

@@ -1,60 +1,138 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+**Question 4**
 
-# Question 4
+a)  A script for simulating a random_walk is provided in the
+    `question-4-code` folder of this repo. Execute the code to produce
+    the paths of two random walks. What do you observe? (10 points)/ The
+    script simulates the paths of two random walks in 2D space with x
+    and y coordinates. The size of each stem is constant (h=0.25) but
+    the direction of each step is generated as a random angle between 0
+    and 2 pi. Both random walks show 500 steps and start at the
+    coordinates (0,0).
 
-   a) A script for simulating a random_walk is provided in the `question-4-code` folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)
-   
-The script simulates the paths of two random walks in 2D space with x and y coordinates. The size of each stem is constant (h=0.25) but the direction of each step is generated as a random angle between 0 and 2 pi. Both random walks show 500 steps and start at the coordinates (0,0). 
+Each time the code is rerun, 2 different plots are produced. This is
+because the angles generated are random each time and so the paths will
+always be random and different.
 
-Each time the code is rerun, 2 different plots are produced. This is because the angles generated are random each time and so the paths will always be random and different. 
+When each set of plots are produced, the show random, unpredictable
+paths that don't demonstrate any trends or patterns. The paths are
+generally not similar in terms of the direction they have travelled and
+the overall shape of the path. Both graphs do show clustering in certain
+regions where steps are close to eachother and not much distance is
+travelled. Both also show areas of spreading out where angles remain
+similar so more distance is travelled.
 
-When each set of plots are produced, the show random, unpredictable paths that don't demonstrate any trends or patterns. The paths are generally not similar in terms of the direction they have travelled and the overall shape of the path. Both graphs do show clustering in certain regions where steps are close to eachother and not much distance is travelled. Both also show areas of spreading out where angles remain similar so more distance is travelled. 
+b)  Investigate the term **random seeds**. What is a random seed and
+    howdoes it work? (5 points)\
 
-b) Investigate the term **random seeds**. What is a random seed and how does it work? (5 points) \
+Random seeds are used to initialise a pseudo-random number generator
+(PRNG). Using a pseudo-random generator rather than a random generator
+allows for results to be reproduced. This is because, when using the
+same random seed, it will produce a sequence of random events that will
+be the same each time. In the past, there would be books of random
+numbers published where each page would have a list of random numbers,
+but each book had the same random numbers on each page. This is the same
+concept but through computers. It allows experiments that use randomness
+to be replicated and reproduced.
 
-Random seeds are used to initialise a pseudo-random number generator (PRNG). Using a pseudo-random generator rather than a random generator allows for results to be reproduced. This is because, when using the same random seed, it will produce a sequence of random events that will be the same each time. In the past, there would be books of random numbers published where each page would have a list of random numbers, but each book had the same random numbers on each page. This is the same concept but through computers. It allows experiments that use randomness to be replicated and reproduced. 
+In R, this works through setting a random seed initially using the
+`set.seed()` function. c) Edit the script to make a reproducible
+simulation of Brownian motion. Commit the file and push it to your
+forked `reproducible-research_homework` repo. (10 points)\
+The edited script can be found in the `question-4-code section` in
+the`random_walk.R file`.
 
-In R, this works through setting a random seed initially using the ** set.seed() ** function. 
+d)  Go to your commit history and click on the latest commit. Show the
+    edit you made to the code in the comparison view (add this image to
+    the **README.md** of the fork). (5 points)
 
-c) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo. (10 points) \
+Not figured out yet .....
 
+a)  Import the data for double-stranded DNA (dsDNA) viruses taken
+    fromthe Supplementary Materials of the original paper into Posit
+    Cloud(the csv file is in the `question-5-data` folder). How many
+    rows andcolumns does the table have? (3 points)\
+    There are 33 rows and 13 columns in the table.
 
-   d) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork). (5 points) 
+b)  What transformation can you use to fit a linear model to the data?
+    Apply the transformation. (3 points)\
+    To fit a linear model to the data we need to apply a logarithmic
+    transformation. I made logged values of the virion volume and genome
+    length data points which can be found in the
+    `virua_data_analysis.R file` in the `Question-5-data folder.`
 
-## Instructions
+This changes the equation from:
 
-The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
+$`V = \alpha L^{\beta}`$
 
-Questions 1, 2 and 3 should be answered in the **README.md** file of the `logistic_growth` repo that you forked during the practical. To answer those questions here, simply include a link to your logistic_growth repo.
+To:
 
-**Submission**: Please submit a single **PDF** file with your candidate number (and no other identifying information), and a link to your fork of the `reproducible-research_homework` repo with the completed answers (also make sure that your username has been anonymised). All answers should be on the `main` branch.
+$`Log(V)= Log(\alpha) + \beta^{\Log(L)}`$
 
-## Assignment questions 
+This now resembles the linear equation $`y = c + mx`$ and so a linear
+model can be applied.
 
-1) (**10 points**) Annotate the **README.md** file in your `logistic_growth` repo with more detailed information about the analysis. Add a section on the results and include the estimates for $N_0$, $r$ and $K$ (mention which *.csv file you used).
-   
-2) (**10 points**) Use your estimates of $N_0$ and $r$ to calculate the population size at $t$ = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth? 
+c)  Find the exponent ($\beta$) and scaling factor ($\alpha$) of the
+    allometric law for dsDNA viruses and write the p-values from the
+    model you obtained, are they statistically significant? Compare the
+    values you found to those shown in **Table 2** of the paper, did you
+    find the same values? (10 points)\
 
-3) (**20 points**) Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the **README.md** file so it can be viewed in the repo homepage.
-   
-4) (**30 points**) Sometimes we are interested in modelling a process that involves randomness. A good example is Brownian motion. We will explore how to simulate a random process in a way that it is reproducible:
+In order to find the Find the exponent ($\beta$) and scaling factor
+($\alpha$) of the allometric law for dsDNA viruses, I calculated the
+linear model and used the $summary function$.
 
-   a) A script for simulating a random_walk is provided in the `question-4-code` folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points) \
-   b) Investigate the term **random seeds**. What is a random seed and how does it work? (5 points) \
-   c) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo. (10 points) \
-   d) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork). (5 points) 
+**Value of** \alpha: Log(\alpha) represents the Intercept in our model.
 
-5) (**30 points**) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \alpha L^{\beta}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides.
+The intercept [log(\alpha)] = 7.0748.
 
-   a) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the `question-5-data` folder). How many rows and columns does the table have? (3 points)\
-   b) What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points) \
-   c) Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points) \
-   d) Write the code to reproduce the figure shown below. (10 points) 
+Therefore \alpha = 1181.807
 
-  <p align="center">
-     <img src="https://github.com/josegabrielnb/reproducible-research_homework/blob/main/question-5-data/allometric_scaling.png" width="600" height="500">
-  </p>
+**Value of** \beta:
 
-  e) What is the estimated volume of a 300 kb dsDNA virus? (4 points) 
+The slope (\beta) = 1.5152
+
+**p values:**
+
+The p value for the intercept (\alpha) is 2.28e-10
+
+The p value for the slope (\Beta) is 6.44e-10.
+
+These are both below 0.01 and so are highly statistically significant.
+
+**Comparison to Table 2 in paper**
+
+In Table 2 of the paper, the value of \beta (Allometric exponent) of the
+virus' dsDNA is 1.52. This is the same as the rounded version of our
+value 1.5152. The table value has a 95% confidence interval of
+(1.16-1.87) so they are not significantly different.
+
+In table 2 of the paper, the value of \alpha (Scaling factor) of the
+virus' dsDNA is 1182 which is the same as the rounded version of our
+value 1181.807. The table value has a 95% confidence interval of
+246-5675 and so they are not significantly different.
+
+d)  Write the code to reproduce the figure shown below. (10 points)/
+    This code can be found in the `virua_data_analysis.R file` in the
+    `Question-5-data folder.`
+
+e)  What is the estimated volume of a 300 kb dsDNA virus? (4 points)/ We
+    can return to our initial equation of:
+
+$`V = \alpha L^{\beta}`$
+
+We can substitute the following values into the equation: $L = 300$
+$alpha = 1181.807$ $beta = 1.5152$
+
+And so:
+
+$V = 1181.807 * 300^1.5152$
+
+$V = 6,697,006$
