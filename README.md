@@ -114,9 +114,9 @@ $`V = \alpha L^{\beta}`$
 
 We can substitute the following values into the equation:
 
--   $`L = 300`$
--   $`\alpha = 1181.807`$
--   $`\beta = 1.5152`$
+- $`\alpha = 1181.807`$
+- $`L = 300`$
+- $`\beta = 1.5152`$
 
 And so:
 
