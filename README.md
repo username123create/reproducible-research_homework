@@ -60,7 +60,7 @@ $`log(V) = log(\alpha) + \beta log(L)`$
 
 This now resembles the linear equation $y = c + mx$ and so a linear model can be applied.
 
-***c)** Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
+***c)** Find the exponent (beta) and scaling factor (alpha) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
 
 In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function. This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
@@ -92,15 +92,21 @@ These are both below 0.01 and so are highly statistically significant values.
 
 In Table 2 of the paper, the value of $\beta$ (Allometric exponent) of the virus' dsDNA is 1.52. This is the same as the rounded version of our value 1.5152. The table value has a 95% confidence interval of (1.16-1.87) so they are not significantly different.
 
-In table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' dsDNA is 1182 which is the same as the rounded version of our value 1181.807. The table value has a 95% confidence interval of 246-5675 and so they are not significantly different.
+In table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' dsDNA is 1182 which is the same as the rounded version of our value 1181.807. The table value has a 95% confidence interval of (246-5675) and so they are not significantly different.
 
 ***d)** Write the code to reproduce the figure shown below. (10 points)*
 
 
 This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder.
 
+My replicated plot can be seen below:
+<p align="center">
 
-***e)** What is the estimated volume of a 300 kb dsDNA virus? (4 points)*
+<img src="https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/LinearPlot.png" />
+
+</p>
+
+***(e)** What is the estimated volume of a 300 kb dsDNA virus? (4 points)*
 
 To calculated the estimated volume of a 300kb dsDNA virus, we can return to our initial equation of:
 
@@ -114,8 +120,8 @@ We can substitute the following values into the equation:
 
 And so:
 
-$`V = 1181.807 * 300^{\1.5152}`$
+$`V = 1181.807 * 300^{1.5152}`$
 
 **$`V = 6,697,006`$**
 
-Therefore, the estimated volume of a 300kb dsDNA virus is **6.697e+06 $nm^3$**
+Therefore, the estimated volume of a 300kb dsDNA virus is 6.697e+06 $nm^3$
