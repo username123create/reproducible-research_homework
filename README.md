@@ -52,11 +52,11 @@ This code can be found here: [Virus Data Analaysis](https://github.com/username1
 
 This changes the equation from:
 
-$`V = \alpha L^{\beta}`$
+- $`V = \alpha L^{\beta}`$
 
 To:
 
-$`log(V) = log(\alpha) + \beta log(L)`$
+- $`log(V) = log(\alpha) + \beta log(L)`$
 
 This now resembles the linear equation $y = c + mx$ and so a linear model can be applied.
 
@@ -66,25 +66,25 @@ In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the all
 
 **Value of $\alpha$:**
 
-Log($\alpha$) represents the *intercept* of our model. According to the linear model analysis, the intercept is:
+Log($\alpha$) represents the *intercept* of our model. According to the linear model analysis summary, the intercept is:
 
-log($\alpha$) = 7.0748.
+- log($\alpha$) = 7.0748.
 
 Therefore:
 
-$\alpha$ = 1181.807
+- $\alpha$ = 1181.807
 
 **Value of $\beta$:**
 
-$\beta$ represents the *slope* of our model. According to the linear model analysis, the slope is:
+$\beta$ represents the *slope* of our model. According to the linear model analysis summary, the slope is:
 
-($\beta$) = 1.5152
+- ($\beta$) = 1.5152
 
 **The p-values:**
 
-The p-value for the intercept log($\alpha$) is **2.28e-10**.
+- The p-value for the intercept log($\alpha$) is **2.28e-10**.
 
-The p-value for the slope ($\beta$) is **6.44e-10**.
+- The p-value for the slope ($\beta$) is **6.44e-10**.
 
 These are both below 0.01 and so are highly statistically significant values.
 
@@ -92,7 +92,7 @@ These are both below 0.01 and so are highly statistically significant values.
 
 In Table 2 of the paper, the value of $\beta$ (Allometric exponent) of the virus' dsDNA is 1.52. This is the same as the rounded version of our value 1.5152. The table value has a 95% confidence interval of (1.16-1.87) so they are not significantly different.
 
-In table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' dsDNA is 1182 which is the same as the rounded version of our value 1181.807. The table value has a 95% confidence interval of (246-5675) and so they are not significantly different.
+In Table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' dsDNA is 1182 which is the same as the rounded version of our value 1181.807. The table value has a 95% confidence interval of (246-5675) and so they are not significantly different.
 
 ***d)** Write the code to reproduce the figure shown below. (10 points)*
 
