@@ -1,8 +1,10 @@
 # Reproducible research: version control and R
 
-Below is the link to my logistic_growth repo containing my answers for questions 1,2 and 3.
+## Questions 1,2 and 3
 
-**Question 4**
+Here is the link to my logistic_growth repo containing my answers for questions 1,2 and 3: [Logistic Growth repo](https://github.com/username123create/logistic_growth)
+
+## Question 4
 
 ***a)** A script for simulating a random_walk is provided in the `question-4-code` folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)*
 
@@ -24,7 +26,9 @@ In R, this works through setting a random seed initially using the `set.seed()` 
 
 ***c)** Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo. (10 points)*
 
-The edited script can be found in the `question-4-code section` in the`random_walk.R file`.
+The edited script can be found here: [Reproducible simulation]
+
+in the `question-4-code section` in the`random_walk.R file`.
 
 ***d)** Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork). (5 points)*
 
