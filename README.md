@@ -26,7 +26,7 @@ In R, this works through setting a random seed initially using the `set.seed()` 
 
 ***c)** Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo. (10 points)*
 
-The edited script can be found here: [Reproducible simulation](https://github.com/username123create/reproducible-research_homework/blob/dev/question-4-code/random_walk.R), or in the `question-4-code section` in the`random_walk.R file`.
+The edited script can be found here: [Reproducible simulation](https://github.com/username123create/reproducible-research_homework/blob/dev/question-4-code/random_walk.R), or in the `question-4-code` in the`random_walk.R` file.
 
 ***d)** Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork). (5 points)*
 
@@ -34,7 +34,7 @@ Below is the comparison of my latest commit showing the insertion of the `set.se
 
 <p align="center">
 
-<img src="https://github.com/username123create/reproducible-research_homework/blob/dev/SeedCommitComparison.png" width="600" height="500"/>
+<img src="https://github.com/username123create/reproducible-research_homework/blob/dev/SeedCommitComparison.png"/>
 
 </p>
 
@@ -46,7 +46,9 @@ There are 33 rows and 13 columns in the table.
 
 ***b)** What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)*
 
-To fit a linear model to the data we need to apply a logarithmic transformation. I used a logarithmic transformation on the values of virion volume and genome length. This can be found in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
+To fit a linear model to the data we need to apply a logarithmic transformation. I used a logarithmic transformation on the values of virion volume and genome length. 
+
+This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
 This changes the equation from:
 
@@ -54,15 +56,15 @@ $`V = \alpha L^{\beta}`$
 
 To:
 
-$`log(V() = log(\alpha) + \beta log(L)`$
+$`log(V) = log(\alpha) + \beta log(L)`$
 
 This now resembles the linear equation $y = c + mx$ and so a linear model can be applied.
 
-***c)** Find the exponent (*$\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)
+***c)** Find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
 
-In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function.
+In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function. This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
-**Value of** $\alpha$:
+**Value of $\alpha$:**
 
 Log($\alpha$) represents the *intercept* of our model. According to the linear model analysis, the intercept is:
 
@@ -72,7 +74,7 @@ Therefore:
 
 $\alpha$ = 1181.807
 
-**Value of** $\beta$:
+**Value of $\beta$:**
 
 $\beta$ represents the *slope* of our model. According to the linear model analysis, the slope is:
 
@@ -80,9 +82,9 @@ $\beta$ represents the *slope* of our model. According to the linear model analy
 
 **The p-values:**
 
-The p-value for the intercept (log($\alpha$) is **2.28e-10**.
+The p-value for the intercept log($\alpha$) is **2.28e-10**.
 
-The p value for the slope ($\Beta$) is **6.44e-10**.
+The p value for the slope ($\beta$) is **6.44e-10**.
 
 These are both below 0.01 and so are highly statistically significant values.
 
@@ -94,24 +96,26 @@ In table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' ds
 
 ***d)** Write the code to reproduce the figure shown below. (10 points)*
 
-This code can be found in the `virua_data_analysis.R file` in the `Question-5-data` folder.
 
-\*\**e)* What is the estimated volume of a 300 kb dsDNA virus? (4 points)\*
+This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder.
+
+
+***e)** What is the estimated volume of a 300 kb dsDNA virus? (4 points)\*
 
 To calculated the estimated volume of a 300kb dsDNA virus, we can return to our initial equation of:
 
-\$V = $\alpha$ L\^{$\beta$}\$
+$`V = \alpha L^{\beta}`$
 
 We can substitute the following values into the equation:
 
--   $L = 300$
--   \$$/alpha$ = 1181.807\$
--   \$$/beta$ = 1.5152\$
+-   $`L = 300`$
+-   $`/alpha = 1181.807`$
+-   $`/beta = 1.5152`$
 
 And so:
 
-$V = 1181.807 * 300^1.5152$
+$`V = 1181.807 * 300{\1.5152}`$
 
-$V = 6,697,006$
+**$`V = 6,697,006`$**
 
-Therefore, the estimated volume of a 300kb dsDNA virus is 6.697e+06 $nm^3$
+Therefore, the estimated volume of a 300kb dsDNA virus is **6.697e+06 $nm^3$**

@@ -1,6 +1,5 @@
 VirusData <- read.csv("Cui_etal2014.csv")
 
-
 # Question 5a
 str(VirusData)
 ## 33 rows and 13 columns
