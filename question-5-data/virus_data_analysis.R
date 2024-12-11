@@ -45,7 +45,8 @@ AllometricPlot <- ggplot(data = VirusData, aes(x = GenomeLengthLog, y = VirionVo
   )
 AllometricPlot
 
-ggsave("AllometricPlot", width = 8, height = 5)
+ggsave("AllometricPlot.png", width = 8, height = 5)
+
 
 
 #Question 5e
