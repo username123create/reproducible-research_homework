@@ -33,7 +33,7 @@ summary(LinearModel)
 ## Write code to reproduce figure
 library(ggplot2)
 
-LinearPlot <- ggplot(data = VirusData, aes(x = GenomeLengthLog, y = VirionVolumeLog)) + 
+AllometricPlot <- ggplot(data = VirusData, aes(x = GenomeLengthLog, y = VirionVolumeLog)) + 
   geom_point(size = 2) + 
   xlab("log [Genome length (kb)]") + 
   ylab("log [Virion volume (nm3)]") + 
@@ -43,9 +43,9 @@ LinearPlot <- ggplot(data = VirusData, aes(x = GenomeLengthLog, y = VirionVolume
     axis.title.x = element_text(face = "bold"),
     axis.title.y = element_text(face = "bold")
   )
-LinearPlot
+AllometricPlot
 
-ggsave("LinearPlot.png", width = 8, height = 5)
+ggsave("AllometricPlot", width = 8, height = 5)
 
 
 #Question 5e
