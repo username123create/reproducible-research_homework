@@ -26,17 +26,15 @@ In R, this works through setting a random seed initially using the `set.seed()` 
 
 ***c)** Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo. (10 points)*
 
-The edited script can be found here: [Reproducible simulation]
-
-in the `question-4-code section` in the`random_walk.R file`.
+The edited script can be found here: [Reproducible simulation](https://github.com/username123create/reproducible-research_homework/blob/dev/question-4-code/random_walk.R), or in the `question-4-code section` in the`random_walk.R file`.
 
 ***d)** Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork). (5 points)*
 
-Below is the comparison of my latest commit showing the changes I made to the script to make a reproducible simulation of Brownian motion. The red boxes indicate where in the code these changes were made. I also added descriptions to the code so each step is clear to understand which represent the other changes between the two commits.
+Below is the comparison of my latest commit showing the insertion of the `set.seed()` function to the script to make a reproducible simulation of Brownian motion. 
 
 <p align="center">
 
-<img src="https://github.com/username123create/reproducible-research_homework/blob/dev/ComparingCommits.pdf" width="600" height="500"/>
+<img src="https://github.com/username123create/reproducible-research_homework/blob/dev/SeedCommitComparison.png" width="600" height="500"/>
 
 </p>
 
