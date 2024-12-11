@@ -6,7 +6,7 @@ library(gridExtra)
 
 random_walk  <- function (n_steps, seed = 1234) {
   
-  set.seed(seed)
+  set.seed(seed) # seed 1234 chosen 
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
   
