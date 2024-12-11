@@ -84,11 +84,11 @@ $\beta$ represents the *slope* of our model. According to the linear model analy
 
 The p-value for the intercept log($\alpha$) is **2.28e-10**.
 
-The p value for the slope ($\beta$) is **6.44e-10**.
+The p-value for the slope ($\beta$) is **6.44e-10**.
 
 These are both below 0.01 and so are highly statistically significant values.
 
-**Comparison to Table 2 in paper**
+**Comparison to Table 2 in paper:**
 
 In Table 2 of the paper, the value of $\beta$ (Allometric exponent) of the virus' dsDNA is 1.52. This is the same as the rounded version of our value 1.5152. The table value has a 95% confidence interval of (1.16-1.87) so they are not significantly different.
 
@@ -100,7 +100,7 @@ In table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' ds
 This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder.
 
 
-***e)** What is the estimated volume of a 300 kb dsDNA virus? (4 points)\*
+***e)** What is the estimated volume of a 300 kb dsDNA virus? (4 points)*
 
 To calculated the estimated volume of a 300kb dsDNA virus, we can return to our initial equation of:
 
@@ -109,12 +109,12 @@ $`V = \alpha L^{\beta}`$
 We can substitute the following values into the equation:
 
 -   $`L = 300`$
--   $`/alpha = 1181.807`$
--   $`/beta = 1.5152`$
+-   $`\alpha = 1181.807`$
+-   $`\beta = 1.5152`$
 
 And so:
 
-$`V = 1181.807 * 300{\1.5152}`$
+$`V = 1181.807 * 300^{\1.5152}`$
 
 **$`V = 6,697,006`$**
 
