@@ -60,7 +60,7 @@ To:
 
 This now resembles the linear equation $y = c + mx$ and so a linear model can be applied.
 
-***c)** Find the exponent (beta) and scaling factor (alpha) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
+***c)** Find the exponent* ($\beta$) *and scaling factor* ($\alpha$) *of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
 
 In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function. This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
