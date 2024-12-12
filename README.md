@@ -48,7 +48,7 @@ There are 33 rows and 13 columns in the table.
 
 To fit a linear model to the data we need to apply a logarithmic transformation. I used a logarithmic transformation on the values of virion volume and genome length. 
 
-This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
+This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/main/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
 This changes the equation from:
 
@@ -62,7 +62,7 @@ This now resembles the linear equation $y = c + mx$ and so a linear model can be
 
 ***c)** Find the exponent* ($\beta$) *and scaling factor* ($\alpha$) *of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)*
 
-In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function. This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
+In order to find the exponent ($\beta$) and scaling factor ($\alpha$) of the allometric law for dsDNA viruses, I calculated a linear model analysis and used the `summary()` function. This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/main/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder
 
 **Value of $\alpha$:**
 
@@ -97,7 +97,7 @@ In Table 2 of the paper, the value of $\alpha$ (Scaling factor) of the virus' ds
 ***d)** Write the code to reproduce the figure shown below. (10 points)*
 
 
-This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/dev/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder.
+This code can be found here: [Virus Data Analaysis](https://github.com/username123create/reproducible-research_homework/blob/main/question-5-data/virus_data_analysis.R), or in the file I created called `virus_data_analysis.R` in the `Question-5-data` folder.
 
 My replicated plot can be seen below:
 <p align="center">
